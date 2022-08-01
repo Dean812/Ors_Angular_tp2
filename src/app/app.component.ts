@@ -22,6 +22,9 @@ constructor() {
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement) {
     console.log(`Adding article title: ${title.value} and link: ${link.value } `);
+    this.articles.push(new Article(title.value, link.value,0));
+    title.value = ''; // reset values
+    title.value = '';
     return false;
   }
 
