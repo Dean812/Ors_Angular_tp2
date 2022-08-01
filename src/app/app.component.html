@@ -7,5 +7,5 @@
     <label for="link">Link: </label><input name="link" #newLink>
   </div>
   <button (click)="addArticle(newTitle,newLink)">Submit link</button>
-  <app-article></app-article>
+  <app-article *ngFor="let a of articles" [article]="a"></app-article>
 </form>

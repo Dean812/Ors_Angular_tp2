@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Article } from '../article';
 
 @Component({
@@ -8,7 +8,7 @@ import { Article } from '../article';
 })
 export class ArticleComponent implements OnInit {
 
-
+  @Input()
   article: Article;
   constructor() {
     this.article = new Article(
