@@ -10,5 +10,11 @@ export class Article {
     this.votes = votes || 0;
   }
 
+  voteUp(): void {
+    this.votes++;
+  }
+  voteDown(): void {
+    this.votes--;
+  }
 
 }
