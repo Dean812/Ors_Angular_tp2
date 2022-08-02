@@ -9,13 +9,9 @@ import { Article } from '../article';
 export class ArticleComponent implements OnInit {
 
   @Input()
-  article: Article;
+  article!: Article; // si enleve le constructeur , mettre !
   constructor() {
-    this.article = new Article(
-      'angular 2',
-      'http://angular.io',
-      10
-    )
+
   }
 
   voteUp(): boolean {

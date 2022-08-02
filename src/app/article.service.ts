@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class ArticleService {
 
   constructor() { }
+
+  sayHello() {
+    console.log('Hello from service');
+  }
 }
