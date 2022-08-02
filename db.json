@@ -1,0 +1,70 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Article 1",
+      "link": "http://seethere.com",
+      "votes": "1",
+      "date": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 1,
+      "title": "Article 2",
+      "link": "http://seethere.com",
+      "votes": "1",
+      "date": "2020-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 1,
+      "title": "Article 3",
+      "link": "http://seethere.com",
+      "votes": "1",
+      "date": "2031-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 1,
+      "title": "Article 4",
+      "link": "http://seethere.com",
+      "votes": "1",
+      "date": "2019-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 1,
+      "title": "Article 5",
+      "link": "http://seethere.com",
+      "votes": "1",
+      "date": "2022-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 5,
+      "title": "Article 32",
+      "link": "http://prout.com",
+      "votes": "56",
+      "date": "2021-04-23T18:25:43.511Z"
+    },
+    {
+      "id": 18,
+      "title": "Article 117",
+      "link": "http://caca-prout.com",
+      "votes": "218",
+      "date": "2019-04-23T18:25:43.511Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

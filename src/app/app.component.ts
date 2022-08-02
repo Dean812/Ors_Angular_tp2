@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Article } from './article';
 import { ArticleService } from './article.service';
 
@@ -8,19 +8,27 @@ import { ArticleService } from './article.service';
   styleUrls: ['./app.component.css'],
   providers: [ArticleService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'ProjectTp2';
-  articles: Article[];
+  articles: Article[]=[new Article('tmp','tmp',0)]; // << initialise(sinon message d'erreur mais vide c'ets ok), mais sera ecrasé later
 
   constructor(private service: ArticleService) {
-    this.articles = [
-      new Article('truc', 'https://www.codetogether.com/', 15),
-      new Article('machin', 'https://www.bitechworld.com/fr/base-de-donn%C3%A9es-sql/', 7),
-      new Article('chouette', 'https://screensiz.es/tablet', 54),
-      new Article('mono', 'https://www.similartech.com/api', 20),
-    ];
-    service.sayHello();
+
+
   }
+  ngOnInit(): void {
+    this.articles= this.service.getArticles();
+    this. service.sayHello(); // this. car on sort du constructeur
+  }
+
+
+
+
+
+
+
+
+
 
 
   addArticle(title: HTMLInputElement, link: HTMLInputElement) {
